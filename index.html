@@ -1,14 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+
+    <title>Aayush Arora | Founder & XR/AR Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+
     <header>
         <h1>Aayush Arora</h1>
-        <p>Founder at Suraksha. XR/AR Developer.</p>
 
         <nav>
             <a href="#about">About</a>
@@ -20,28 +29,56 @@
         </nav>
     </header>
 
+
     <section id="home">
-        <p>FOUNDER. ENGINEER. BUILDER.</p>
-        <h2>Building technology that solves real-world problems.</h2>
-        <p>
-            I'm Aayush Arora, founder of Suraksha and the solo
-            builder of Sakshi, an AI-assisted personal safety
-            platform designed to identify potential threats
-            and escalate to SOS only after verification.
-        </p>
+        <div class="hero-container">
 
-        <p>
-            My work combines artificial intelligence,
-            computer vision, backend engineering, and
-            interactive software to build practical products.
-        </p>
+            <div class="hero-content">
 
-        <a href="#projects">Explore My Work</a>
-        <a href="#contact">Get In Touch</a>
+                <p>FOUNDER. ENGINEER. BUILDER.</p>
+
+                <h2>Building technology that solves real-world problems.</h2>
+
+                <p>
+                    I'm Aayush Arora, founder of Suraksha and the solo
+                    builder of Sakshi, an AI-assisted personal safety
+                    platform designed to identify potential threats
+                    and escalate to SOS only after verification.
+                </p>
+
+                <p>
+                    My work combines artificial intelligence,
+                    computer vision, backend engineering, and
+                    interactive software to build practical products.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects">Explore My Work</a>
+
+                    <a href="#contact">Get In Touch</a>
+
+                    <!-- RESUME DOWNLOAD BUTTON -->
+                    <a href="resume.pdf"
+                       download="Aayush_Arora_Resume.pdf"
+                       class="btn-resume">
+                        ↓ Download Resume
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+                <img src="your_profile_pic.jpg"
+                     alt="Aayush Arora Profile">
+            </div>
+
+        </div>
     </section>
+
 
     <section id="about">
         <h2>About Me</h2>
+
         <p>
             I'm a developer and founder interested in building
             systems that connect AI, real-time perception,
@@ -64,98 +101,146 @@
             pose tracking, threat scoring, AI verification,
             authentication, SOS handling, and incident logging.
         </p>
-
-        <p>
-            I enjoy working across the stack — from computer
-            vision and model integration to APIs, application
-            logic, and user-facing interfaces.
-        </p>
     </section>
+
 
     <section id="projects">
         <h2>Featured Projects</h2>
 
-        <article>
-            <h3>Sakshi — AI-Assisted Personal Safety</h3>
+        <article class="project-card">
 
-            <p>
-                My flagship project: a personal safety platform
-                designed to detect patterns of potentially
-                threatening behaviour using camera and
-                microphone sensors.
-            </p>
+            <div class="project-img">
+                <img src="sakshi_demo.png"
+                     alt="Sakshi AI Safety Platform">
+            </div>
 
-            <p>
-                I built the pipeline using YOLO, ByteTrack,
-                pose estimation, threat scoring, Gemini
-                verification, authentication, and incident
-                logging. SOS escalation occurs after
-                verification, with an option for the user
-                to cancel.
-            </p>
+            <div class="project-info">
+                <h3>Sakshi — AI-Assisted Personal Safety</h3>
 
-            <p>Technologies: Python, OpenCV, YOLO, MediaPipe,
-                FastAPI, WebSockets, Gemini, Supabase.</p>
+                <p>
+                    My flagship project: a personal safety platform
+                    designed to detect patterns of potentially
+                    threatening behaviour using camera and
+                    microphone sensors.
+                </p>
 
-            <a href="https://youtu.be/Jk46ixaHbuQ"
-                target="_blank"
-                rel="noopener noreferrer">
-                Watch Project Demo
-            </a>
+                <p>
+                    I built the pipeline using YOLO, ByteTrack,
+                    pose estimation, threat scoring, Gemini
+                    verification, authentication, and incident
+                    logging. SOS escalation occurs after
+                    verification, with an option for the user
+                    to cancel.
+                </p>
+
+                <p class="tech-stack">
+                    <strong>Technologies:</strong>
+                    Python, OpenCV, YOLO, MediaPipe, FastAPI,
+                    WebSockets, Gemini, Supabase.
+                </p>
+
+                <a href="https://youtu.be/Jk46ixaHbuQ"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="btn-demo">
+                    Watch Project Demo
+                </a>
+            </div>
+
         </article>
 
-        <article>
-            <h3>QA Automation Framework — Sunbase</h3>
 
-            <p>
-                Engineered a custom QA automation framework
-                covering more than 150 test cases, featuring
-                a specialised command-line runner.
-            </p>
+        <article class="project-card">
+
+            <div class="project-img">
+                <img src="qa_knockbase.png"
+                     alt="QA Automation and Scanner">
+            </div>
+
+            <div class="project-info">
+                <h3>QA Automation Framework & OpenCV Scanner — Sunbase</h3>
+
+                <p>
+                    Engineered a custom QA automation framework
+                    covering more than 150 test cases, featuring
+                    a specialised command-line runner, alongside an
+                    optimised OpenCV document-scanning pipeline
+                    integrated directly into core workflows.
+                </p>
+
+                <p class="tech-stack">
+                    <strong>Technologies:</strong>
+                    Python, C#, AltTester, OpenCV, Unity, Git.
+                </p>
+            </div>
+
         </article>
 
-        <article>
-            <h3>OpenCV Document Scanner — Sunbase</h3>
 
-            <p>
-                Developed and optimised an OpenCV-based
-                document-scanning pipeline integrated
-                directly into core company workflows.
-            </p>
+        <article class="project-card">
+
+            <div class="project-img">
+                <img src="ar_measurement.jpg"
+                     alt="AR Measurement Tool">
+            </div>
+
+            <div class="project-info">
+                <h3>AR Measurement Tool — Sunbase</h3>
+
+                <p>
+                    Developed and integrated an augmented reality
+                    measurement tool with interactive UI controls
+                    and real-time spatial mapping for surface
+                    distance estimation.
+                </p>
+
+                <p class="tech-stack">
+                    <strong>Technologies:</strong>
+                    Unity, C#, AR Foundation, Mobile SDKs.
+                </p>
+            </div>
+
         </article>
 
-        <article>
-            <h3>AR Measurement Tool — Sunbase</h3>
 
-            <p>
-                Developed and integrated an augmented reality
-                measurement tool with interactive UI controls
-                and real-time spatial mapping for surface
-                distance estimation.
-            </p>
+        <article class="project-card">
+
+            <div class="project-img">
+                <img src="speedracers_demo.png"
+                     alt="SpeedRacers Game">
+            </div>
+
+            <div class="project-info">
+                <h3>SpeedRacers</h3>
+
+                <p>
+                    A typing-based racing game project built
+                    around real-time gameplay, racing mechanics,
+                    and interactive systems.
+                </p>
+
+                <p class="tech-stack">
+                    <strong>Technologies:</strong>
+                    Unity, C#, UI Canvas, Game Physics.
+                </p>
+            </div>
+
         </article>
 
-        <article>
-            <h3>SpeedRacers</h3>
-
-            <p>
-                A typing-based racing game project built
-                around real-time gameplay, racing mechanics,
-                and interactive systems.
-            </p>
-        </article>
     </section>
+
 
     <section id="experience">
         <h2>Professional Experience</h2>
 
-        <article>
+        <article class="exp-card">
             <h3>Founder & Lead Developer — Suraksha</h3>
-            <p>August 2026 – Present</p>
+
+            <p class="exp-date">August 2026 – Present</p>
 
             <p>
-                Building Sakshi, an AI-assisted personal
-                safety platform, as a solo founder.
+                Building Sakshi, an AI-assisted personal safety
+                platform, as a solo founder.
             </p>
 
             <ul>
@@ -166,155 +251,201 @@
             </ul>
         </article>
 
-        <article>
+
+        <article class="exp-card">
             <h3>Unity Developer — Sunbase</h3>
-            <p>June 2025 – August 2026 | Remote, US-based</p>
+
+            <p class="exp-date">
+                June 2025 – August 2026 | Remote, US-based
+            </p>
 
             <ul>
                 <li>
-                    Transitioned from intern to full-time
-                    Unity Developer based on production performance.
+                    Transitioned from intern to full-time Unity
+                    Developer based on production performance.
                 </li>
                 <li>
-                    Engineered a QA automation framework
-                    covering 150+ test cases.
+                    Engineered a QA automation framework covering
+                    150+ test cases using AltTester and C#.
                 </li>
                 <li>
-                    Developed an OpenCV document-scanning pipeline.
+                    Developed an OpenCV document-scanning pipeline
+                    integrated into core company workflows.
                 </li>
                 <li>
-                    Built an AR measurement tool with
-                    interactive UI and spatial mapping.
+                    Built an AR measurement tool with interactive
+                    UI and spatial mapping.
                 </li>
             </ul>
         </article>
 
-        <article>
+
+        <article class="exp-card">
             <h3>Unity Developer Trainee — Red Apple Learning</h3>
-            <p>April 2024 – May 2025</p>
+
+            <p class="exp-date">April 2024 – May 2025</p>
+
+            <p>
+                Trained in professional game loops, scripting,
+                and cross-platform builds.
+            </p>
         </article>
 
     </section>
+
 
     <section id="skills">
         <h2>Technical Skills</h2>
 
-        <article>
-            <h3>AI & Computer Vision</h3>
-            <p>
-                OpenCV, YOLO, MediaPipe, pose estimation,
-                real-time computer vision.
-            </p>
-        </article>
+        <div class="skills-grid">
 
-        <article>
-            <h3>Backend Development</h3>
-            <p>
-                Python, FastAPI, WebSockets, REST APIs,
-                Supabase, authentication.
-            </p>
-        </article>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                     alt="C#">
+                <h3>C#</h3>
+                <p>Unity scripting, backend logic & object-oriented architecture.</p>
+            </div>
 
-        <article>
-            <h3>Game Development</h3>
-            <p>
-                Unity, C#, Photon PUN2, real-time multiplayer,
-                augmented reality.
-            </p>
-        </article>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                     alt="Python">
+                <h3>Python</h3>
+                <p>AI pipelines, FastAPI, computer vision & automation scripts.</p>
+            </div>
 
-        <article>
-            <h3>Cloud & Development Tools</h3>
-            <p>
-                AWS, Docker, Git, GitHub, CI/CD.
-            </p>
-        </article>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg"
+                     alt="Unity Engine">
+                <h3>Unity Engine</h3>
+                <p>Game development, AR experiences & interactive mechanics.</p>
+            </div>
 
-        <article>
-            <h3>Testing</h3>
-            <p>
-                Automated testing, QA automation frameworks,
-                specialised CLI runners.
-            </p>
-        </article>
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original.svg"
+                     alt="Unreal Engine">
+                <h3>Unreal Engine</h3>
+                <p>High-fidelity real-time 3D environments & Blueprints.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg"
+                     alt="AWS">
+                <h3>AWS</h3>
+                <p>Cloud deployment, server management & storage.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                     alt="Docker">
+                <h3>Docker</h3>
+                <p>Containerization, reproducible builds & microservices.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                     alt="Java">
+                <h3>Java</h3>
+                <p>Object-oriented programming and application logic.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                     alt="HTML5">
+                <h3>HTML</h3>
+                <p>Semantic web markup and portfolio structuring.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                     alt="CSS3">
+                <h3>CSS</h3>
+                <p>Modern layouts, animations, flexbox & responsive grids.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                     alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Dynamic client-side interactivity and web scripting.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="alttester.png" alt="AltTester">
+                <h3>AltTester</h3>
+                <p>Automated UI testing framework for Unity games.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                     alt="Git">
+                <h3>Git</h3>
+                <p>Version control, branching workflows & collaboration.</p>
+            </div>
+
+            <div class="skill-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg"
+                     alt="Supabase">
+                <h3>Supabase</h3>
+                <p>PostgreSQL database backend, auth & real-time listeners.</p>
+            </div>
+
+        </div>
     </section>
+
 
     <section id="education">
         <h2>Education</h2>
 
-        <article>
+        <article class="edu-card">
             <h3>Scaler School of Technology</h3>
-            <p>
-                Bachelor's program in AI & Business
-            </p>
-            <p>August 2026 – 2030 (Expected)</p>
+            <p>Bachelor's program in AI & Business</p>
+            <p class="edu-date">August 2026 - 2030 (Expected)</p>
         </article>
 
-        <article>
+        <article class="edu-card">
             <h3>BITS Pilani</h3>
-            <p>
-                B.Sc. (Hons.) Computer Science — Online
-            </p>
-            <p>August 2026 – 2030 (Expected)</p>
+            <p>B.Sc. (Hons.) Computer Science - Online</p>
+            <p class="edu-date">August 2026 - 2030 (Expected)</p>
+        </article>
+
+        <article class="edu-card">
+            <h3>Indus Valley World School</h3>
+            <p>Stream: Commerce</p>
+            <p class="edu-date">August 2023 - May 2025</p>
         </article>
     </section>
 
-            <section id="education">
-            <h2>Education</h2>
-
-            <article>
-                <h3>Scaler School of Technology</h3>
-                <p>
-                    Bachelor's program in AI & Business
-                </p>
-                <p>August 2026 – 2030 (Expected)</p>
-            </article>
-
-            <article>
-                <h3>BITS Pilani</h3>
-                <p>
-                    B.Sc. (Hons.) Computer Science — Online
-                </p>
-                <p>August 2026 - 2030 (Expected)</p>
-            </article>
-    </section>
 
     <section id="contact">
         <h2>Let's Connect</h2>
 
         <p>
-            Interested in AI, computer vision, software
-            engineering, or collaborating on meaningful products?
-            Let's connect.
+            Interested in AI, computer vision, software engineering,
+            or collaborating on meaningful products? Let's connect.
         </p>
 
-        <p>
-            Email:
-            <a href="mailto:surakshaforbusiness@gmail.com">
-                Get in touch
-            </a>
-        </p>
+        <div class="contact-links">
+            <a href="mailto:surakshaforbusiness@gmail.com">Email Me</a>
 
-        <p>
             <a href="https://github.com/CoffeeBoi347"
-                target="_blank"
-                rel="noopener noreferrer">
+               target="_blank"
+               rel="noopener noreferrer">
                 GitHub
             </a>
-        </p>
 
-        <p>
             <a href="https://www.linkedin.com/in/aayush-arora-1aa551329/"
-                target="_blank"
-                rel="noopener noreferrer">
+               target="_blank"
+               rel="noopener noreferrer">
                 LinkedIn
             </a>
-        </p>
+        </div>
     </section>
+
 
     <footer>
         <p>&copy; 2026 Aayush Arora. All rights reserved.</p>
         <p>Designed and built from scratch.</p>
     </footer>
+
 </body>
 </html>
